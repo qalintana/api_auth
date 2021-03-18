@@ -25,7 +25,6 @@ export default function autMiddleware(
     const { id } = data as TokenPayload;
 
     request.userId = id;
-    console.log(data);
 
     next();
   } catch {
